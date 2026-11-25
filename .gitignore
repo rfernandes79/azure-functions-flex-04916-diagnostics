@@ -1,0 +1,11 @@
+.env
+.env.*
+*.xlsx
+*.xlsm
+*.xls
+*.pfx
+*.pem
+*.key
+*.zip
+private/
+secrets/

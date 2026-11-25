@@ -1,0 +1,21 @@
+{
+  "source": "Operator-supplied ARM deployment-status summary; not an independently signed capture",
+  "apiVersion": "2025-05-01",
+  "statusInitiallyReported": "BuildSuccessful",
+  "statusSubsequentlyReported": "RuntimeFailed",
+  "error": {
+    "code": "ExpectationFailed",
+    "extendedCode": "04916",
+    "message": "Deployment for site '[APP_NAME]' with DeploymentId '[DEPLOYMENT_ID]' failed because the operation timed out after '20' minutes. Please try the deployment again."
+  },
+  "instanceCountersReported": {
+    "successful": 0,
+    "failed": 0,
+    "inProgress": 0
+  },
+  "failedInstancesLogsInReceivedSummary": "absent_or_null",
+  "failedInstanceLogUrlAvailableInReceivedSummary": false,
+  "zeroCountFromCliFallbackDoesNotProveEmptyLogArray": true,
+  "automaticRetryPerformed": false,
+  "rootCauseEstablished": false
+}

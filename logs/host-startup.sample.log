@@ -1,0 +1,34 @@
+# One complete startup sequence extracted from a PARTIAL operator-supplied export.
+# Function names and opaque identifiers were replaced with consistent aliases.
+# This sample does not establish error-free operation or all-instance health.
+2026-11-24T14:31:30.1778549Z | Host.Startup | severity=1 | Initializing Host. OperationId: '[IDENTIFIER_01]'.
+2026-11-24T14:31:30.1780045Z | Host.Startup | severity=1 | Host initialization: ConsecutiveErrors=0, StartupCount=3, OperationId=[IDENTIFIER_01]
+2026-11-24T14:31:30.1816665Z | Host.Startup | severity=1 | Starting Host (HostId=[IDENTIFIER_03], InstanceId=[IDENTIFIER_02], Version=4.1055.300.26527, ProcessId=59, AppDomainId=1, InDebugMode=True, InDiagnosticMode=False, FunctionsExtensionVersion=~4)
+2026-11-24T14:31:30.1820149Z | Host.Startup | severity=1 | Loading functions metadata
+2026-11-24T14:31:30.1918751Z | Host.Startup | severity=1 | Reading functions metadata (Custom)
+2026-11-24T14:31:30.1935233Z | Host.Startup | severity=1 | 0 functions found (Custom)
+2026-11-24T14:31:30.1941495Z | Host.Startup | severity=1 | 18 functions loaded
+2026-11-24T14:31:30.20744Z | Host.Startup | severity=1 | Generating 18 job function(s)
+2026-11-24T14:31:30.2308575Z | Host.Startup | severity=1 | Found the following functions:
+Host.Functions.function_01
+Host.Functions.function_02
+Host.Functions.function_03
+Host.Functions.function_04
+Host.Functions.function_05
+Host.Functions.function_06
+Host.Functions.function_07
+Host.Functions.function_08
+Host.Functions.function_09
+Host.Functions.function_10
+Host.Functions.function_11
+Host.Functions.function_12
+Host.Functions.function_13
+Host.Functions.function_14
+Host.Functions.function_15
+Host.Functions.function_16
+Host.Functions.function_17
+Host.Functions.function_18
+2026-11-24T14:31:30.2314428Z | Host.Startup | severity=1 | Host initialized (49ms)
+2026-11-24T14:31:30.2314961Z | Host.Startup | severity=1 | Host started (49ms)
+2026-11-24T14:31:30.2315088Z | Host.Startup | severity=1 | Job host started
+2026-11-24T14:34:00.9456794Z | Host.Startup | severity=1 | Job host stopped

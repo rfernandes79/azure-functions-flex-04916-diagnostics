@@ -1,0 +1,71 @@
+{
+  "source": "Current operator-supplied read-only ARM configuration and assignment checks",
+  "iamCollectedAtUtc": "2026-11-25T22:11:58.107145+00:00",
+  "runtime": {
+    "language": "node",
+    "version": "22",
+    "os": "Linux",
+    "plan": "Flex Consumption",
+    "region": "Brazil South",
+    "functionsExtensionVersion": "~4",
+    "hostVersionInStartupSample": "4.1055.300.26527"
+  },
+  "deployment": {
+    "tool": "Azure CLI az functionapp deployment source config-zip",
+    "remoteBuild": false,
+    "deployerLogValue": "az_cli",
+    "uploadedZipBytes": 196922,
+    "repackagedZipBytes": 198044,
+    "filesComparedByOperator": 92,
+    "packagedHttpFunctions": 18,
+    "singleControlledUploadReported": true
+  },
+  "network": {
+    "appVnetSubnetFieldReturned": true,
+    "appVnetSubnetReferenceConfigured": false,
+    "privateEndpointsAppAndStorage": "not_verified",
+    "ipAndScmAccessRestrictions": "not_verified",
+    "storagePublicNetworkAccess": "Enabled",
+    "storageFirewallDefaultAction": "Allow",
+    "inboundAuthenticationRequiredAsPreviouslyAudited": true,
+    "unauthenticatedActionAsPreviouslyAudited": "Return401",
+    "httpsRequiredAsPreviouslyAudited": true
+  },
+  "identity": {
+    "type": "UserAssigned",
+    "hostAndDeploySelectSameIdentityAssignedToApp": true,
+    "hostAndDeployUseSameStorageAccount": true,
+    "hostUsesManagedIdentityCredentialAndClientId": true,
+    "directHostConnectionStringPresent": false,
+    "hostManagedIdentityResourceIdSettingPresent": false,
+    "hostBlobRole": {
+      "name": "Storage Blob Data Owner",
+      "scope": "storage_account",
+      "inherited": false,
+      "conditionPresent": false
+    },
+    "deployRoles": [
+      {
+        "name": "Storage Blob Data Contributor",
+        "scope": "deployment_container",
+        "inherited": false,
+        "conditionPresent": false
+      },
+      {
+        "name": "Storage Blob Data Owner",
+        "scope": "storage_account",
+        "inheritedAtDeploymentContainer": true,
+        "conditionPresent": false
+      }
+    ]
+  },
+  "limits": {
+    "liveConnectivityTested": false,
+    "effectivePermissionsProven": false,
+    "denyPimAndGroupsEvaluated": false,
+    "historicalConfigurationDuringDeploymentAttested": false,
+    "allInstancesHealthyProven": false,
+    "causeOf04916Established": false,
+    "fallbackDeploymentPathEstablished": false
+  }
+}

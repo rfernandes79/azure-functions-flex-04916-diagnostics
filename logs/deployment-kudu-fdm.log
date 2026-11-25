@@ -1,0 +1,48 @@
+# Sanitized operator-supplied pipeline observations; UTC timestamps.
+# 45 distinct records from 51 reported rows; exact duplicates removed.
+# Bracketed names are aliases; prior redactions remain redacted.
+2026-11-24T14:11:10.3557713Z | (no StepGroup) | Specialization starting. 11/24/2026 14:11:09 | exception=Specialize
+2026-11-24T14:11:10.355782Z | (no StepGroup) | Saved specialization context (FunctionsKuduContainerAssignmentContext) to: /container-specialization-context/FunctionsKuduContainerAssignmentContext.json at 11/24/2026 14:11:09 | exception=Save
+2026-11-24T14:11:12.3446921Z | BackgroundDeployerService | [BackgroundDeployerService] Starting deployment pipeline. DEPLOYMENTINFO: deploymentId = [DEPLOYMENT_ID], correlationId = [CORRELATION_ID], remoteBuild = False, deployer = az_cli, os = Linux, sku = FlexConsumption, language = node, frameworkVersion = 22, siteName = [APP_NAME], slotName = Production, siteHostName = [APP_HOSTNAME]
+2026-11-24T14:11:12.3446978Z | Kudu-SourcePackageUriDownloadStep | [Kudu-SourcePackageUriDownloadStep] Skipping download. Zip package is present at /tmp/zipdeploy/[DEPLOYMENT_ID].zip
+2026-11-24T14:11:12.344703Z | Kudu-ValidationStep | [Kudu-ValidationStep] starting.
+2026-11-24T14:11:12.344736Z | Kudu-ValidationStep | [Kudu-ValidationStep] Size of downloaded zip file: /tmp/zipdeploy/[DEPLOYMENT_ID].zip is 196922 bytes
+2026-11-24T14:11:12.3447414Z | Kudu-ValidationStep | [Kudu-ValidationStep] completed.
+2026-11-24T14:11:12.3447468Z | Kudu-ExtractZipStep | [Kudu-ExtractZipStep] starting.
+2026-11-24T14:11:12.3447533Z | Kudu-ExtractZipStep | [Kudu-ExtractZipStep] Cleaned files in /tmp/zipdeploy/extracted
+2026-11-24T14:11:12.3447589Z | Kudu-ExtractZipStep | [Kudu-ExtractZipStep] Extracted zip package from /tmp/zipdeploy/[DEPLOYMENT_ID].zip to /tmp/zipdeploy/extracted
+2026-11-24T14:11:12.3447638Z | Kudu-ExtractZipStep | [Kudu-ExtractZipStep] Deleted downloaded zip file: /tmp/zipdeploy/[DEPLOYMENT_ID].zip
+2026-11-24T14:11:12.3447684Z | Kudu-ExtractZipStep | [Kudu-ExtractZipStep] completed.
+2026-11-24T14:11:12.3447743Z | Kudu-ContentValidationStep | [Kudu-ContentValidationStep] starting.
+2026-11-24T14:11:12.3447802Z | Kudu-ContentValidationStep | [Kudu-ContentValidationStep] completed.
+2026-11-24T14:11:12.3447851Z | Kudu-PreBuildValidationStep | [Kudu-PreBuildValidationStep] Skipping pre-build validation (remotebuild = false).
+2026-11-24T14:11:12.3447894Z | Kudu-OryxBuildStep | [Kudu-OryxBuildStep] Skipping oryx build (remotebuild = false).
+2026-11-24T14:11:12.3447947Z | Kudu-PostBuildValidationStep | [Kudu-PostBuildValidationStep] starting.
+2026-11-24T14:11:12.3448001Z | Kudu-PostBuildValidationStep | [Kudu-PostBuildValidationStep] Generating post-build validation command.
+2026-11-24T14:11:12.3448059Z | Kudu-PostBuildValidationStep | [Kudu-PostBuildValidationStep] Completed post-build validation.
+2026-11-24T14:11:12.3448111Z | Kudu-PostBuildValidationStep | [Kudu-PostBuildValidationStep] completed.
+2026-11-24T14:11:12.3448163Z | Kudu-PackageZipStep | [Kudu-PackageZipStep] starting.
+2026-11-24T14:11:12.3448216Z | Kudu-PackageZipStep | [Kudu-PackageZipStep] Size of output directory: /tmp/zipdeploy/extracted is 483234 bytes.
+2026-11-24T14:11:12.3448541Z | Kudu-PackageZipStep | [Kudu-PackageZipStep] Created zip file with artifacts as /home/site/artifacts/[DEPLOYMENT_ID].zip.
+2026-11-24T14:11:12.3448607Z | Kudu-PackageZipStep | [Kudu-PackageZipStep] Size of produced zip file: /home/site/artifacts/[DEPLOYMENT_ID].zip is 198044 bytes.
+2026-11-24T14:11:12.3448653Z | Kudu-PackageZipStep | [Kudu-PackageZipStep] completed.
+2026-11-24T14:11:12.3448699Z | Kudu-UploadPackageStep | [Kudu-UploadPackageStep] starting.
+2026-11-24T14:11:12.3448745Z | Kudu-UploadPackageStep | [Kudu-UploadPackageStep] Using Kudu.Legion.Core.Storage.BlobContainerStorage
+2026-11-24T14:11:12.3449202Z | Kudu-UploadPackageStep | [Kudu-UploadPackageStep] completed. Uploaded package to storage successfully.
+2026-11-24T14:11:12.3450348Z | Kudu-RemoveWorkersStep | [Kudu-RemoveWorkersStep] is skipped.
+2026-11-24T14:11:12.3450403Z | Kudu-SyncTriggerStep | [Kudu-SyncTriggerStep] is skipped.
+2026-11-24T14:11:12.3450451Z | Kudu-CleanUpStep | [Kudu-CleanUpStep] is skipped.
+2026-11-24T14:11:12.3450532Z | BackgroundDeployerService | [BackgroundDeployerService] Pipeline completed for FDM deployment. FDM timeout monitoring was started during upload. DEPLOYMENTINFO: deploymentId = [DEPLOYMENT_ID], correlationId = [CORRELATION_ID], remoteBuild = False, deployer = az_cli, os = Linux, sku = FlexConsumption, language = node, frameworkVersion = 22, siteName = [APP_NAME], slotName = Production, siteHostName = [APP_HOSTNAME]
+2026-11-24T14:11:17.3486536Z | Kudu-CleanUpStep | [Kudu-CleanUpStep] starting.
+2026-11-24T14:11:17.3486588Z | Kudu-CleanUpStep | [Kudu-CleanUpStep] Cleaned the source packages directory.
+2026-11-24T14:11:17.3486681Z | Kudu-CleanUpStep | [Kudu-CleanUpStep] Cleaned the extracted content at /tmp/zipdeploy/extracted
+2026-11-24T14:11:17.3486744Z | Kudu-CleanUpStep | [Kudu-CleanUpStep] Cleaned the result artifact directory.
+2026-11-24T14:11:17.3486796Z | Kudu-CleanUpStep | [Kudu-CleanUpStep] completed.
+2026-11-24T14:11:17.3487097Z | Kudu-CleanUpStep | [Kudu-CleanUpStep] Deleted temporary deployment file: [PREVIOUSLY_REDACTED_PATH].zip
+2026-11-24T14:11:17.3487255Z | Kudu-CleanUpStep | [Kudu-CleanUpStep] Deleted temporary deployment file: [PREVIOUSLY_REDACTED_PATH].txt
+2026-11-24T14:11:17.3487405Z | Kudu-CleanUpStep | [Kudu-CleanUpStep] Deleted old deployment package: [PREVIOUS_DEPLOYMENT_ID].zip
+2026-11-24T14:11:17.3487461Z | Kudu-CleanUpStep | [Kudu-CleanUpStep] Deleted old deployment record: [PREVIOUS_DEPLOYMENT_ID]
+2026-11-24T14:12:14.3468065Z | PodStateHandler |  | exception=[PodStateHandler] Marking pod for deletion after 30 minutes have passed.
+2026-11-24T14:12:55.4367112Z | (no StepGroup) | Specialization starting. 11/24/2026 14:12:54 | exception=Specialize
+2026-11-24T14:12:55.4367583Z | (no StepGroup) | Saved specialization context (FunctionsKuduContainerAssignmentContext) to: /container-specialization-context/FunctionsKuduContainerAssignmentContext.json at 11/24/2026 14:12:54 | exception=Save
+2026-11-24T14:42:55.4305181Z | PodStateHandler |  | exception=[PodStateHandler] Marking pod for deletion after 30 minutes have passed.
